@@ -1,21 +1,23 @@
 package bicycles;
 
-public class RoadBike {
-    private int speed;
+public class RoadBike extends BicycleBase{
+//    private int speed;
 
     public void accelerate(){
-        speed += 5;
+        changeSpeed(11);
     }
 
     public void brake(){
-        speed -= 3;
+        changeSpeed(-4);
     }
 
-    public int currentSpeed(){
-        return speed;
-    }
+    //the methods below are already implemented in the BicycleBase class
 
-    public final void stop(){
-        speed = 0;
-    }
+//    public int currentSpeed(){
+//        return speed;
+//    }
+//
+//    public int stop(){
+//        speed = 0;
+//    }
 }
