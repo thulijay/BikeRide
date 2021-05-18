@@ -1,22 +1,13 @@
 package bicycles;
 
-public class MountainBike extends BicycleBase{
-//    private int speed;
+public class MountainBike extends BicycleBase {
 
     //these two methods now using the changeSpeed method from the BicycleBase class
-    public void accelerate(){
+    public void accelerate() {
         changeSpeed(5);
     }
 
-    public void brake(){
+    public void brake() {
         changeSpeed(-3);
     }
-
-//    public int currentSpeed(){
-//        changeSpeed();
-//    }
-//
-//    public int stop(){
-//        changeSpeed(0);
-//    }
 }
