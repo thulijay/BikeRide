@@ -10,9 +10,9 @@ public class BikeRideThree implements BikeRide{
     @Override
     public void ride() {
         bicycle.accelerate();
+        bicycle.brake();
+        bicycle.accelerate();
         bicycle.accelerate();
         bicycle.brake();
-        bicycle.stop();
-
     }
 }

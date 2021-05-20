@@ -1,7 +1,7 @@
 package bicycles;
 
 public class BikeRideOne implements BikeRide{
-    private final Bicycle bicycle;
+    private  Bicycle bicycle;
 
     public BikeRideOne(Bicycle bicycle) {
         this.bicycle = bicycle;
@@ -9,13 +9,13 @@ public class BikeRideOne implements BikeRide{
 
     @Override
     public void ride(){
-        this.bicycle.accelerate();
-        this.bicycle.accelerate();
-        this.bicycle.accelerate();
-        this.bicycle.accelerate();
-        this.bicycle.brake();
-        this.bicycle.brake();
-        this.bicycle.brake();
-        this.bicycle.brake();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.brake();
+        bicycle.brake();
     }
 }

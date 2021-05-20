@@ -13,7 +13,7 @@ public class BikeRideTwo implements BikeRide{
         bicycle.accelerate();
         bicycle.accelerate();
         bicycle.accelerate();
-        bicycle.accelerate();
-
+        bicycle.brake();
+        bicycle.stop();
     }
 }
