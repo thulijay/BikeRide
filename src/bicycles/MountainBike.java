@@ -13,6 +13,6 @@ public class MountainBike extends BicycleBase {
 
     @Override
     public BicycleType getBicycleType() {
-        return null;
+        return BicycleType.MountainBike;
     }
 }

@@ -7,13 +7,20 @@ public class BikeRideTwo implements BikeRide{
         this.bicycle = bicycle;
     }
 
+    public int currentSpeed (){
+        return this.bicycle.currentSpeed();
+    }
+
     @Override
     public void ride() {
         bicycle.accelerate();
         bicycle.accelerate();
         bicycle.accelerate();
         bicycle.accelerate();
-        bicycle.brake();
         bicycle.stop();
+        bicycle.accelerate();
+        bicycle.accelerate();
+        bicycle.brake();
+
     }
 }
