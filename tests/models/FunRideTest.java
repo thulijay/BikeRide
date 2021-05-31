@@ -1,13 +1,21 @@
-package bicycles;
+package models;
 
+import bicycles.Bicycle;
+import bicycles.BicycleType;
+import models.FunRide;
+import models.MountainBike;
+import models.RoadBike;
+import models.Tandem;
 import org.junit.jupiter.api.Test;
+import specifications.BicycleFromSpec;
+import specifications.BicycleSpecification;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FunRideTest {
 
     @Test
-    public void funRideShouldBeAbleToTestMountainBikeAndRoadBike() {
+    public void funRideShouldBeAbleToAcceptMountainBikeAndRoadBike() {
         FunRide funRide = new FunRide(8);
         MountainBike mountainBike = new MountainBike();
         RoadBike roadBike = new RoadBike();
@@ -19,7 +27,7 @@ public class FunRideTest {
     }
 
     @Test
-    public void funRideShouldBeAbleToTestMountainBike() {
+    public void funRideShouldBeAbleToAccelerateMountainBike() {
         FunRide funRide = new FunRide(4);
         Bicycle mountainBike = new MountainBike();
 
@@ -29,8 +37,8 @@ public class FunRideTest {
     }
 
     @Test
-    public void funRideShouldBeAbleToTestRoadBike() {
-        FunRide funRide = new FunRide(4);
+    public void funRideShouldBeAbleToAccelerateRoadBike() {
+        FunRide funRide = new FunRide(12);
         RoadBike roadBike = new RoadBike();
 
         funRide.ridesAccepted(roadBike);
@@ -39,7 +47,7 @@ public class FunRideTest {
     }
 
     @Test
-    public void funRideShouldBeAbleToTandem() {
+    public void funRideShouldBeAbleToAccelerateTandem() {
         FunRide funRide = new FunRide(4);
         Tandem tandem = new Tandem();
 
@@ -49,7 +57,7 @@ public class FunRideTest {
     }
 
     @Test
-    public void funRideShouldBeAbleToTestBicycleSpec() {
+    public void funRideShouldBeAbleToTestBicycleSpecBrakeAndAcceleration() {
         FunRide funRide = new FunRide(8);
         BicycleSpecification mountainBike = new BicycleSpecification(+5, -3, BicycleType.MountainBike);
         BicycleSpecification roadBike = new BicycleSpecification(+11, -4, BicycleType.RoadBike);
