@@ -2,7 +2,7 @@ package bicycles;
 
 @SuppressWarnings("used")
 
-    enum BicycleType {
+    public enum BicycleType {
         RoadBike,
         MountainBike,
         Tandem

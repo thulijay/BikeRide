@@ -1,4 +1,6 @@
-package bicycles;
+package rides;
+
+import bicycles.Bicycle;
 
 public class BikeRideTwo implements BikeRide{
     private Bicycle bicycle;

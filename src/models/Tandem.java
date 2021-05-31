@@ -1,7 +1,10 @@
-package bicycles;
+package models;
 
 
-public class Tandem extends BicycleBase{
+import bicycles.BicycleBase;
+import bicycles.BicycleType;
+
+public class Tandem extends BicycleBase {
 
     public void accelerate() {
         changeSpeed(+12);

@@ -1,4 +1,7 @@
-package bicycles;
+package models;
+
+import bicycles.BicycleBase;
+import bicycles.BicycleType;
 
 public class MountainBike extends BicycleBase {
 

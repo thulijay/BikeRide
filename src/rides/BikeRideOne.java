@@ -1,7 +1,9 @@
-package bicycles;
+package rides;
+
+import bicycles.Bicycle;
 
 public class BikeRideOne implements BikeRide{
-    private  Bicycle bicycle;
+    private Bicycle bicycle;
 
     public BikeRideOne(Bicycle bicycle) {
         this.bicycle = bicycle;

@@ -2,10 +2,6 @@ package models;
 
 import bicycles.Bicycle;
 import bicycles.BicycleType;
-import models.FunRide;
-import models.MountainBike;
-import models.RoadBike;
-import models.Tandem;
 import org.junit.jupiter.api.Test;
 import specifications.BicycleFromSpec;
 import specifications.BicycleSpecification;
