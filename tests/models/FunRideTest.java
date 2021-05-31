@@ -39,7 +39,7 @@ public class FunRideTest {
 
         funRide.ridesAccepted(roadBike);
 
-        assertEquals(0, funRide.getBicycleTypeCount(BicycleType.RoadBike));
+        assertEquals(1, funRide.getBicycleTypeCount(BicycleType.RoadBike));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class FunRideTest {
 
         funRide.ridesAccepted(tandem);
 
-        assertEquals(0, funRide.getBicycleTypeCount(BicycleType.Tandem));
+        assertEquals(1, funRide.getBicycleTypeCount(BicycleType.Tandem));
     }
 
     @Test
