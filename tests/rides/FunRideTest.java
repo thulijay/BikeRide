@@ -1,9 +1,11 @@
-package models;
+package rides;
 
 import bicycles.Bicycle;
 import bicycles.BicycleType;
+import models.MountainBike;
+import models.RoadBike;
+import models.Tandem;
 import org.junit.jupiter.api.Test;
-import rides.FunRide;
 import specifications.BicycleFromSpec;
 import specifications.BicycleSpecification;
 
