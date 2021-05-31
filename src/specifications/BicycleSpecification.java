@@ -6,15 +6,15 @@ import bicycles.BicycleType;
 public class BicycleSpecification {
     private BicycleType bicycleType;
     private  int accelerationSpeed;
-    private  int brakeSpeed;
+    private  int brakeSpeed = -(getBrakeSpeed());
 
 //    BicycleSpecification roadBikeSpec = new BicycleSpecification(11, 4);
 
 
     public BicycleSpecification(int accelerationSpeed, int brakeSpeed, BicycleType bicycleType){
         this.accelerationSpeed = accelerationSpeed;
-        this.brakeSpeed = brakeSpeed;
-        this.bicycleType = bicycleType;
+        this.brakeSpeed =  brakeSpeed;
+        this.bicycleType =  bicycleType;
 
 //        System.out.println(roadBikeSpec.getBrakeSpeed());
     }

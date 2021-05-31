@@ -58,8 +58,8 @@ public class FunRideTest {
     @Test
     public void funRideShouldBeAbleToTestBicycleSpecBrakeAndAcceleration() {
         FunRide funRide = new FunRide(8);
-        BicycleSpecification mountainBike = new BicycleSpecification(+5, -3, BicycleType.MountainBike);
-        BicycleSpecification roadBike = new BicycleSpecification(+11, -4, BicycleType.RoadBike);
+        BicycleSpecification mountainBike = new BicycleSpecification(5, 3, BicycleType.MountainBike);
+        BicycleSpecification roadBike = new BicycleSpecification(11, 4, BicycleType.RoadBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBike);
         Bicycle bicycle1 = new BicycleFromSpec(roadBike);
 
@@ -73,8 +73,8 @@ public class FunRideTest {
     @Test
     public void funRideShouldOnlyAcceptTwoRides() {
         FunRide funRide = new FunRide(8);
-        BicycleSpecification mountainBike = new BicycleSpecification(+5, -3, BicycleType.MountainBike);
-        BicycleSpecification roadBike = new BicycleSpecification(+11, -4, BicycleType.RoadBike);
+        BicycleSpecification mountainBike = new BicycleSpecification(5, 3, BicycleType.MountainBike);
+        BicycleSpecification roadBike = new BicycleSpecification(11, 4, BicycleType.RoadBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBike);
         Bicycle bicycle1 = new BicycleFromSpec(roadBike);
 
