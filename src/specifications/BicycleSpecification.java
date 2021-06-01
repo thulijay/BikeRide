@@ -6,7 +6,9 @@ import bicycles.BicycleType;
 public class BicycleSpecification {
     private BicycleType bicycleType;
     private  int accelerationSpeed;
-    private  int brakeSpeed = -(getBrakeSpeed());
+    private  int brakeSpeed;
+
+//    brakeSpeed = accelerationSpeed - brakeSpeed;
 
 //    BicycleSpecification roadBikeSpec = new BicycleSpecification(11, 4);
 
@@ -20,11 +22,11 @@ public class BicycleSpecification {
     }
 
     public int getAccelerationSpeed(){
-        return accelerationSpeed;
+        return accelerationSpeed++;
     }
 
     public int getBrakeSpeed(){
-        return brakeSpeed;
+        return brakeSpeed--;
     }
 
     public BicycleType getBicycleType(){
