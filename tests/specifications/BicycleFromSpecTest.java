@@ -11,7 +11,7 @@ public class BicycleFromSpecTest {
         BicycleSpecification mountainBike = new BicycleSpecification(5, 3, BicycleType.MountainBike);
 
         assertEquals(5, mountainBike.getAccelerationSpeed());
-        assertEquals(3, mountainBike.getBrakeSpeed());
+        assertEquals(-3, mountainBike.getBrakeSpeed());
     }
 
     @Test
@@ -19,7 +19,7 @@ public class BicycleFromSpecTest {
         BicycleSpecification roadBike = new BicycleSpecification(11, 4, BicycleType.MountainBike);
 
         assertEquals(11, roadBike.getAccelerationSpeed());
-        assertEquals( 4, roadBike.getBrakeSpeed());
+        assertEquals( -4, roadBike.getBrakeSpeed());
     }
 
     @Test
@@ -27,6 +27,6 @@ public class BicycleFromSpecTest {
         BicycleSpecification tandem = new BicycleSpecification(12, 7, BicycleType.MountainBike);
 
         assertEquals(12, tandem.getAccelerationSpeed());
-        assertEquals(7, tandem.getBrakeSpeed());
+        assertEquals(-7, tandem.getBrakeSpeed());
     }
 }

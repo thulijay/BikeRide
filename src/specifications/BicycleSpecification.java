@@ -14,19 +14,19 @@ public class BicycleSpecification {
 
 
     public BicycleSpecification(int accelerationSpeed, int brakeSpeed, BicycleType bicycleType){
-        this.accelerationSpeed = accelerationSpeed;
-        this.brakeSpeed =  brakeSpeed;
+        this.accelerationSpeed += accelerationSpeed;
+        this.brakeSpeed -=  brakeSpeed;
         this.bicycleType =  bicycleType;
 
 //        System.out.println(roadBikeSpec.getBrakeSpeed());
     }
 
     public int getAccelerationSpeed(){
-        return accelerationSpeed++;
+        return accelerationSpeed;
     }
 
     public int getBrakeSpeed(){
-        return brakeSpeed--;
+        return brakeSpeed;
     }
 
     public BicycleType getBicycleType(){
