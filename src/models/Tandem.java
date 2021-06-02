@@ -6,12 +6,14 @@ import bicycles.BicycleType;
 
 public class Tandem extends BicycleBase {
 
+    @Override
     public void accelerate() {
-        changeSpeed(+12);
+        changeSpeed(12);
     }
 
+    @Override
     public void brake() {
-        changeSpeed(-7);
+        brake(7);
     }
 
     @Override

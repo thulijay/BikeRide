@@ -3,9 +3,10 @@ package bicycles;
 public abstract class BicycleBase implements Bicycle {
     private int speed;
 
-    protected void changeSpeed(int speedOf){
-        this.speed += speedOf;
+    protected void changeSpeed(int speed){
+        this.speed += speed;
     }
+
     public int stop(){
        return speed = 0;
     }
@@ -14,7 +15,7 @@ public abstract class BicycleBase implements Bicycle {
         return speed;
     }
 
-    public void brake(){
-        speed -= speed;
+    public void brake(int speed){
+       this.speed -= speed;
     }
 }
